@@ -107,7 +107,7 @@ split
 
 isLoading
 {	
-	if (current.sus == 3003296979008 || current.sus == 2678491060288)
+	if (current.sus == 3003296979008 || current.sus == 2678491060288 || current.sus == 1529690658880)
 		return false;
 	else
 		return true;
