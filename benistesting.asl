@@ -2,7 +2,7 @@ state("BasicsInFilmmaking-Win64-Shipping")
 {
 ///	byte sus : "BasicsInFilmmaking-Win64-Shipping.exe", 0x6C13DB8, 0x170, 0x8, 0x10;
 ///	byte aaa : "BasicsInFilmmaking-Win64-Shipping.exe", 0x6C13DB8, 0x170, 0x8, 0x12;
-///	byte aaa : "BasicsInFilmmaking-Win64-Shipping.exe", 0x6C13DB8, 0x170, 0x8;
+	int aaa : "BasicsInFilmmaking-Win64-Shipping.exe", 0x6C13DB8, 0x170, 0x8;
 }
 
 startup
@@ -29,7 +29,7 @@ init
 
     vars.Helper["GWorldName"] = vars.Helper.Make<ulong>(gWorld, 0x30, 0xE8, 0x2A8);
     vars.Helper["sus"] = vars.Helper.Make<ulong>(gWorld, 0x170, 0x8, 0x10);
-    vars.Helper["aaa"] = vars.Helper.Make<ulong>(gWorld, 0x170, 0x8);
+///    vars.Helper["aaa"] = vars.Helper.Make<ulong>(gWorld, 0x170, 0x8);
 
 	vars.FNameToString = (Func<ulong, string>)(fName =>
 	{
